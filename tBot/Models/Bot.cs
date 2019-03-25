@@ -12,7 +12,7 @@ namespace tBot.Models
     {
         private static TelegramBotClient client;
         private static List<Command> commandsList;
-        public static IReadOnlyList<Command> Commands { get => commandsList.AsReadOnly() }
+        public static IReadOnlyList<Command> Commands { get => commandsList.AsReadOnly(); }
 
         public static async Task<TelegramBotClient> Get()
         {
